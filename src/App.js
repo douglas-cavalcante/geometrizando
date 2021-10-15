@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Figure from './components/Figure';
+import Art from './components/Art'
+/*
+  Componentes 
+  Props -> Propriedades
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+*/
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h1 className="title">Geometrizando</h1>
+        <Art>
+          <Figure type="square" bg="red" />
+          <Figure type="circle" bg="blue" />
+          <Figure type="square" bg="#000" />
+          <Figure type="circle" bg="red" />
+          <Figure type="square" bg="#000" />
+          <Figure type="circle" bg="#000" />
+          <Figure type="square" bg="#DDD" />
+          <Figure type="circle" bg="red" />
+          <Figure type="square" bg="red" />
+          <Figure type="circle" bg="red" />
+          <Figure type="square" bg="purble" />
+          <Figure type="circle" bg="#red" />
+          <Figure type="square" bg="#000" />
+          <Figure type="circle" bg="red" />
+         
+        </Art>
+      </div>
+    )
+  }
 }
 
 export default App;
+
+
+
